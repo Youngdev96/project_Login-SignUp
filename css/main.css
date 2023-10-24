@@ -1,0 +1,206 @@
+/* 폰트 설정 */
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Oswald&family=Tilt+Neon&display=swap");
+
+/* 웹페이지 컨셉색상 설정 */
+:root {
+    --primary-color: #0d1723;
+    --accent-color: #ff6ac9;
+    --text-color: #e6ebf4;
+    --line-color: #7e8b96;
+}
+
+/* 태그별 기본 세팅 */
+html {
+    font-family: "Tilt Neon", sans-serif;
+    background-image: url(/css/background.jpg);
+    background-size: 100%, 100%;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+input {
+    font-family: "Jua", sans-serif;
+}
+
+select {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: "Jua", sans-serif;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+/* 콘텐츠 영역 요소 */
+.loginContainer,
+.signUpContainer {
+    /* position: absolute; */
+    background-color: var(--primary-color);
+    opacity: 85%;
+    height: 460px;
+    width: 320px;
+    padding: 2rem;
+    border-radius: 10%;
+    color: var(--text-color);
+}
+
+.loginContents,
+.signUpContents {
+    padding: 0.2rem;
+}
+
+#form {
+    margin-top: 1.5rem;
+    /* width: 100%; */
+}
+
+.content {
+    /* width: auto; */
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    /* line-height: 1.25rem; */
+}
+
+/* 섹션 제목 */
+#title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* 로그인 섹션 요소 */
+.idContent {
+    width: 100%;
+    box-sizing: border-box;
+    height: 2rem;
+    background-color: var(--primary-color);
+    opacity: 85%;
+    border-radius: 0.3rem;
+    margin-top: 5px;
+    border: 1px solid var(--line-color);
+    color: var(--text-color);
+}
+
+.pwContainer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    border: 1px solid var(--line-color);
+    border-radius: 0.3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.pwContent {
+    width: calc(100% -18px);
+    height: auto;
+    border: none;
+    background-color: var(--primary-color);
+    opacity: 85%;
+    color: var(--text-color);
+}
+
+.pwIcon {
+    width: 18px;
+    height: auto;
+    cursor: pointer;
+}
+
+.forgotPw {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+    margin: 8px 0 14px 0;
+}
+
+/* 소셜로그인 요소 */
+
+.socialLoginMsg {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.line {
+    height: 1px;
+    flex: 1 1 0%;
+    background-color: var(--line-color);
+}
+
+.message {
+    margin: 0 10px 0 10px;
+}
+
+.socialIcons {
+    padding-top: 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.socialIcons i {
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+.socialIcons :hover {
+    color: var(--accent-color);
+}
+
+/* 로그인 signUp 요소 */
+
+.signUp {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    color: var(--line-color);
+    font-size: 0.9rem;
+}
+
+.signUpBtn {
+    font-weight: 700;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+.signUpBtn:hover {
+    color: var(--accent-color);
+}
+
+/* 버튼 css 설정 */
+
+.signInBtn,
+.registerBtn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.signInBtn:hover,
+.registerBtn:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.02);
+    transition: linear 0.2s;
+}

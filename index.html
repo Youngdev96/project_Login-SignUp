@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/cf8c55826f.js" crossorigin="anonymous"></script>
+        <!-- css 파일 연결 -->
+        <link rel="stylesheet" href="./css/main.css" />
+        <title>Login & SignUp</title>
+    </head>
+    <body>
+        <!-- 로그인 Section 작성 -->
+        <main class="loginContainer" id="show">
+            <section class="loginContents">
+                <div id="title">LOGIN</div>
+
+                <!-- 로그인 양식 -->
+                <div id="form">
+                    <div class="content">
+                        <div class="contentTitle">ID</div>
+                        <input type="text" placeholder=" 아이디" class="idContent" id="loginId" />
+                    </div>
+                    <div class="content">
+                        <div class="contentTitle">Password</div>
+                        <div class="pwContainer">
+                            <input type="password" placeholder=" 비밀번호" class="pwContent" />
+                            <div class="pwIcon">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forgotPw">
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    <button class="signInBtn">Sign In</button>
+                </div>
+
+                <!-- 소셜로그인 -->
+                <div class="socialLoginMsg">
+                    <div class="line"></div>
+                    <div class="message">Login with social accounts</div>
+                    <div class="line"></div>
+                </div>
+                <div class="socialIcons">
+                    <a href="https://accounts.google.com/" target="_blank"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/login" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <!-- 회원가입 이동 -->
+                <div class="signUp">
+                    <div>Don't have an account ?</div>
+                    <button class="signUpBtn">Sign Up</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- 회원가입 Section 작성 -->
+        <main class="signUpContainer" id="hide">
+            <section class="signUpContents">
+                <div id="title">Create Account</div>
+
+                <!-- 회원가입 양식 작성 -->
+                <div id="form">
+                    <!-- 아이디 -->
+                    <div class="content">
+                        <div class="contentTitle">ID</div>
+                        <input type="text" placeholder=" 아이디" class="idContent" id="signUpId" />
+                    </div>
+                    <!-- 이름 -->
+                    <div class="content">
+                        <div class="contentTitle">Name</div>
+                        <input type="text" placeholder=" 이름" class="idContent" id="signUpName" />
+                    </div>
+                    <!-- 생년월일 -->
+                    <div class="content">
+                        <div class="contentTitle">Birth</div>
+                        <div class="birthday">
+                            <select class="box" id="birthYear">
+                                <option disabled selected>연도</option>
+                            </select>
+                            <select class="box" id="birthMonth">
+                                <option disabled selected>월</option>
+                            </select>
+                            <select class="box" id="birthDay">
+                                <option disabled selected>일</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- 초기 비밀번호 -->
+                    <div class="content">
+                        <div class="contentTitle">Password</div>
+                        <div class="pwContainer">
+                            <input type="password" placeholder=" 비밀번호" class="pwContent" id="signUpPw" />
+                            <div class="pwIcon">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 비밀번호 확인 -->
+                    <div class="content">
+                        <div class="contentTitle">Confirm Password</div>
+                        <div class="pwContainer">
+                            <input type="password" placeholder=" 비밀번호" class="pwContent" id="confirmPw" />
+                            <div class="pwIcon">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="confirmMsg"></div>
+                    <button class="registerBtn">Resister</button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
